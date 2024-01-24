@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let num = [2, 5, 1, 2, 6, 3, 5];
+      function removeDublicates(arr) {
+        let unique = [];
+        arr.forEach((element) => {
+          if (!unique.includes(element)) {
+            unique.push(element);
+          }
+        });
+        return unique;
+      }
+      console.log(removeDublicates(num));
+    </script>
+  </body>
+</html>

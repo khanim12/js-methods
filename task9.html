@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function countNum(cumle){
+            let sozler=cumle.split(' ');
+            let filterenmis=sozler.filter(function(elem){
+                return elem !== ""
+            })
+            return filterenmis.length;
+        }
+        let a=prompt("cumle daxil edin")
+        let result=countNum(a);
+        console.log(result);
+    </script>
+</body>
+</html>

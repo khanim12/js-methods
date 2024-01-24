@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function reverseSent(cumle) {
+            let sozler=cumle.split(' ');
+            let soz=sozler.map(function(elem) {
+                 return elem.split('').reverse().join('')
+
+            })
+            let cum=soz.join(' ')
+            return cum
+        }
+        let a=prompt("cumle daxil edin")
+        let result=reverseSent(a)
+        console.log(result);
+    </script>
+</body>
+</html>

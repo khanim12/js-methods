@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function ilkherfBoyuk(metn){
+            let soz=metn.split(' ');
+            if(soz.length>0){
+                soz[0]=soz[0].charAt(0).toUpperCase()+soz[0].slice(1)
+            }
+            let newSent=soz.join(' ')
+            return newSent;
+        }
+        let a=prompt("bir metn daxil edin")
+        let result=ilkherfBoyuk(a);
+        console.log(result);
+    </script>
+</body>
+</html>

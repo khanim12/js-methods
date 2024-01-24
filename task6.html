@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function reverseText(metn){
+            let elem=metn.split('');
+            let tersArr=elem.reverse();
+            let tersMetn=tersArr.join('');
+            return tersMetn;
+
+        }
+        let a=prompt("bir metn daxil edin")
+        let result=reverseText(a);
+        console.log(result);
+    </script>
+</body>
+</html>
